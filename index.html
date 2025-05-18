@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Barbeque Nation Assistant Chatbot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      background: #f8f8fa;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      min-height: 100vh;
+    }
+    .header {
+      margin-top: 40px;
+      text-align: center;
+    }
+    .header img {
+      width: 60px;
+      margin-bottom: 10px;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #c0392b;
+      letter-spacing: 1px;
+    }
+    .header p {
+      color: #555;
+      margin: 8px 0 0 0;
+      font-size: 1.1rem;
+    }
+    .chatbot-container {
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      width: 100%;
+      max-width: 420px;
+      min-height: 440px;
+      margin: 30px 0 0 0;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      padding: 0;
+      overflow: hidden;
+      position: relative;
+    }
+    .embed-placeholder {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #aaa;
+      font-size: 1.1rem;
+      background: #f2f2f7;
+      border: 2px dashed #e1e1e1;
+      margin: 24px;
+      border-radius: 12px;
+      min-height: 320px;
+    }
+    .footer {
+      margin-top: 40px;
+      color: #aaa;
+      font-size: 0.95rem;
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      .chatbot-container {
+        max-width: 98vw;
+        min-height: 340px;
+      }
+      .embed-placeholder {
+        margin: 10px;
+        min-height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="https://img.icons8.com/emoji/96/barbecue.png" alt="Barbeque Nation">
+    <h1>Barbeque Nation Assistant</h1>
+    <p>Your personal assistant for bookings, FAQs, and more!</p>
+  </div>
+  <div class="chatbot-container">
+    <!-- ====== INSERT CHATDASH EMBED CODE BELOW ====== -->
+    <div id="cd-widget"></div>
+        <script>
+        (function() {
+            if (window.chatWidgetScriptLoaded) return;
+            window.ChatWidgetConfig = {
+                projectId: "6829ab75079fdb17d5ac0398", 
+            };
+
+            var chatWidgetScript = document.createElement("script");
+            chatWidgetScript.type = 'text/javascript';
+            chatWidgetScript.src = "https://storage.googleapis.com/cdwidget/dist/assets/js/main.js";
+            document.body.appendChild(chatWidgetScript);
+
+            window.chatWidgetScriptLoaded = true;
+        })();
+        </script>
+    <script src="https://cdn.chat-dash.com/widget.js" data-agent-id="agent_065ddc2e6592452ddec750f458"></script>
+    <!-- Example: 
+    <script src="https://cdn.chat-dash.com/widget.js" data-agent-id="YOUR_AGENT_ID"></script>
+    -->
+    <!-- ============================================== -->
+  </div>
+  <div class="footer">
+    &copy; 2025 Barbeque Nation | Powered by Retell AI & ChatDash
+  </div>
+</body>
+</html>
